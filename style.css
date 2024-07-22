@@ -1,0 +1,885 @@
+* {box-sizing: border-box;}
+html{
+  scroll-behavior: smooth;
+  /*font-size: calc(11px + 0.390625vw);*/
+
+}
+body { 
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+#center{
+  max-width: clamp(300px, 80%, 900px);
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+}
+h1{
+  text-wrap: balance;
+  text-align: center;
+}
+header{
+    background-color: #97EC2A;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+
+p{
+    line-height: 1.8em;
+    word-spacing: 1px;
+}
+.fa-envelope{
+    margin: 3px 10px;
+}  
+header h4{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    color: #000;
+    font-size: 12px;
+}
+
+h4 i{
+  padding-left: 20px;
+}
+.logo-left .logo {
+  max-width: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-image: linear-gradient(to right, rgba(91, 139, 169, 0.705), rgba(45, 179, 24, 0.13), rgba(91, 139, 169, 0.705));
+  z-index: 99;
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.nav-center a {
+  color: #1a1a1a;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.nav-center a:hover {
+  color: rgb(144, 214, 31);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: .3s;
+}
+
+a:active {
+  color: rgb(48, 202, 143);
+}
+
+/*.burger{
+  display: none;
+}
+.layer1,.layer2,.layer3 {
+  background: black;
+  height: 4px;
+  margin-top: 4px;
+  width: 100%;
+  border-radius: 10px;
+}*/
+@media(max-width:1182.75px){
+  #center{
+    max-width: clamp(300px, 87%, 1000px);
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  .vegetable-gallery, .aqua-imgs, .inter-imgs{ 
+    overflow-x: auto;
+  }
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 2px;
+    border: .5px solid #d5d5d5;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eeeeee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #b0b0b0;
+  }
+    
+
+}
+
+.company{
+    max-width: 100%;
+    height: 90vh;
+    flex-shrink: 0;
+    /*width: 100%;
+    height: 50vh; nice view point height*/
+    margin-top: 0px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  
+  }
+  .company p{
+    color: #19191a;
+    max-width: clamp(300px, 80%, 900px);
+    
+  }
+  .company-content{
+    text-align: center;
+    padding-top: 190px;
+    
+  }
+  .company-content h1{
+    font-size: 2.8rem;
+    margin: auto auto;
+  }
+  .company-content li{
+    font-size: 1.2rem;
+    margin: auto auto;
+  } 
+  
+  #welcome{
+    text-align: center;
+    color:#1A2733;
+    font-size: clamp(1rem, 1rem + 10vw, 2.4rem);
+    font-weight: 700;
+  }
+  /*farm layouts section*/
+  .farm-intro p,ul{
+  
+    font-weight: 400;
+    line-height: 1.6em;
+    margin: 0 30px;
+  }
+  .farm-intro{
+    background: #ffffff;
+    border: 1px ;
+    max-width: 100%;
+  }
+  .farm-intro h3{
+    padding-top: 20px;
+    margin: 0 59px;
+    color: #1A2733;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 11px;
+  }
+  .designs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .design img{
+    max-width: 100%;
+  }
+  .design video{
+    max-width: 100%;
+  }
+  .design{
+    background: #ffffff;
+    border: solid 1px #0d467b39;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  #layout1, #layout2, #layout3{
+    width: 250px;
+    min-height: 240px;
+  }  
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 7px;
+}
+#learn-btn{
+    background: #19C42A;
+    color:#ffffff ;
+    padding: 10px;
+    border-radius: 40px;
+    width: 120px;
+    border: none;
+    margin: 7px;
+    font-size: 15px;
+}
+.contact-btn{
+    background: #86CB2E;
+    color:#ffffff ;
+    padding: 10px;
+    width: 120px;
+    border-radius: 40px;
+    margin: 7px;
+    font-size: 15px;
+    border: none;
+    
+}
+.contact-btn, #learn-btn:hover{
+  cursor: pointer;
+}
+/*Solar section*/
+.solar-section{
+    margin: auto;
+}
+.solar-intro{
+
+  margin-left:20px;
+  margin-top: 20px;
+}
+.solar-section h2 {
+   margin-top: 100px;
+   text-align: center;
+   color: #1A2733;
+}
+.solar-motto{
+  margin: auto;
+  border: solid 0px #3C93E3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+  max-width: 95%;
+  height: 143px;
+  background: #00000003;
+  place-items: center;
+}
+.solar-motto img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 5px 49px;
+  object-fit: cover;   
+  
+}
+.motto-quote{
+  margin-top: 7px;
+}
+.solar-motto p{
+  font-size: 14px;
+  margin-left: -7px;
+  
+}
+.motto-small{
+  color: #444646;
+  font-size: small ;
+  font-weight: 100;
+  margin: -17px;
+  margin-left: -123px;
+}
+
+.solar-support{
+  color: #3d3f41;
+  text-align: left;
+  padding: 0 76px;
+  margin-top: 20px;
+  line-height: 1.4em;
+}
+
+/*from span*/
+.motto-quote h3{
+  padding-left: 15px;
+}
+.arc{
+  color: #F69709;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Krona One", sans-serif;
+  font-style: normal;
+}
+.agro{
+  color: #86CB2E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Krona One";
+  font-style: normal;
+}
+.engine{
+  color: #3C93E3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Krona One";
+  font-style: normal;
+}
+
+.kits{
+    width: 100%;
+    height: 295px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 90px;
+  }
+.kit{
+    background: #ffffff;
+    max-width: 254px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 225px;
+    border: solid 0px #0D467B;
+    margin: auto;
+    margin: 25px 50px;
+    text-align: center;
+}
+.kit img{
+    width: 200px;
+    height: 220px ;
+}
+figcaption{
+  font-size: 14px;
+  background-image: linear-gradient( to right, rgba(0, 140, 255, 0.342), rgba(255, 255, 0, 0.301), rgba(72, 173, 25, 0.21) );
+  color: #656565;
+  max-width: 254px;
+}    
+.solar-info{
+  margin-top: -75px;
+}
+.info-img img{
+  width:190px ;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 50px 0px;
+}
+.img-info{
+ margin: auto;
+ border: solid 0px #3c92e32f;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ align-content: center;
+ justify-content: center;
+ max-width: 100%;
+ color:#2a2a2b ;
+ background: #00000005;
+}
+.img-infor1{
+  max-width: 50ch;
+  padding: 27px 60px;
+  background: #00000000;
+}
+.img-infor1 h4{
+  margin-bottom: -11px;
+}
+.img-infor2{
+  background: #19191a02;
+  margin-left: -129px;
+  padding-left: 130px;
+}
+
+.solar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px;
+}
+#contact-btn1{
+    background: #19C42A;
+    color: #fff;
+    border: solid 0px #19191a;
+    padding: 11px;
+    border-radius: 25px;
+    width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+footer{
+    background: #19191a;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    
+}
+small{
+    text-align: center;
+    color: #6B7073;
+    display: block;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  /*irrigation*/
+  .irrigation-section{
+    text-align: center;
+  }
+  .vegetable-section h1, .irrigation-section h1, h2{
+     color: #1A2733;
+  }
+  .intro-irr{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    margin-top: 40px ;
+  }
+  .irrigation-intro img,.maize-intro img{
+    width: 200px;
+  }
+  .maize-intro{
+    width: 460px;
+    outline: 2px solid #87cb2e36;
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+
+  }
+  .irrigation-intro{
+    width: 460px;
+    outline: 2px solid #87cb2e36;
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+  }  
+  .irrigation-intro p,.maize-intro p{
+    margin-top: 15px;
+  }
+  .irrigation-intro p{
+    max-width:27ch;
+  }
+
+.drip-irrigation{
+  margin-top: 50px;
+}
+.drip-img{
+  max-width: 400px;
+  margin: auto;
+  padding: 35px;
+}
+.drip-img img{
+  max-width: 100%;
+}
+.vegetable-section h2{
+  margin-top: 60px;
+}
+.list{
+  margin-left: -40px;
+  list-style: none;
+}
+  .vegetables{
+    display: grid;
+    gap: 40px;
+    grid-template-rows: auto auto;
+    max-width: 100%;
+    margin: 50px 0px;
+  }
+  .vegetables p{
+    font-size: 16px;
+    margin: 20px 21px;
+  }
+  .cabbage p{
+    margin-top: 43px;
+  }
+  .cucumber img, .cabbage img{
+    width: 230px;
+  }
+  .cucumber, .cabbage{
+    
+    outline: 0px solid #0D467B;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+mark{
+  background-color: #63f00b96;
+}
+.vegetable-section #span1{
+    color: #19C42A;
+    font-weight: 700;
+}
+.vegetable-gallery{
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px;
+}
+#veg-img1 img, #veg-img2 img, #veg-img4 img{
+  max-width: 290px;
+}
+#veg-img3 img{
+  max-width: 190px;
+  height: 194px;
+}
+
+@media(max-width:798.98px){
+  .solar-motto{
+    display: grid;
+    row-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    height: auto;
+    place-items: center;
+  } 
+  .motto-quote{
+    margin-top: 7px; 
+  }
+  .solar-motto p{
+    font-size: 14px;
+    margin-left: 107px;
+    
+  }
+  .motto-small{
+    color: #444646;
+    font-size: small ;
+    font-weight: 100;
+    margin: -17px;
+    margin-left: -120px;
+  }
+  .img-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    place-items: center;
+} 
+.img-infor1{
+  max-width: 90ch;
+  padding: 0px 20px;
+  background: #00000000;
+}
+.img-infor1 h4{
+  margin-bottom: -11px;
+}
+.cabbage p, .cucumber p{
+  margin-top:0px;
+  margin-left: -1px;
+}
+}
+@media(max-width:750.99px){
+  .cucumber, .cabbage{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+}
+@media(max-width:1049.99px){
+  /*irrigation*/
+  .irrigation-section{
+  text-align: center;
+}
+.vegetable-section h1, .irrigation-section h1, h2{
+   color: #1A2733;
+}
+.intro-irr{
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  margin-top: 40px ;
+}
+.irrigation-intro img,.maize-intro img{
+  width: 200px;
+}
+.maize-intro{
+  min-width: 80vw;
+  outline: 2px solid #87cb2e36;
+  display: grid;
+  column-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0px;
+}
+.irrigation-intro{
+  min-width: 80vw;
+  outline: 2px solid #87cb2e36;
+  display: grid;
+  column-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+}  
+.irrigation-intro p,.maize-intro p{
+  margin-top: 25px;
+  max-width: 32ch;
+  margin: auto 10px;
+  text-align: left;
+}
+  }
+
+/*soil-analysis*/
+.section1{
+  margin-top: 90px;
+  background-image: url(Soil/soilo.jpg);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-repeat: no-repeat;        
+  background-size: cover;          
+  background-position: center;
+  text-align: center;
+            
+}
+.soil-analysis{
+  max-width: 300px; 
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 87px ;
+  padding-top: 90px;
+  text-align: left;
+}
+.soil-analysis h4{
+  margin-top: -10px;
+  color:#f6f6f6;
+  background: linear-gradient(#19c42a5d, #19c42a65);
+  padding: 5px;
+  max-width: 15ch;
+}
+.section2{
+  background-image: url(Soil/soilStock.jpeg);
+  border-radius: 50%;
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  background-repeat: no-repeat;        
+  background-size: cover;          
+  background-position: center;
+  text-align: center;
+  margin-left: 260px;
+  
+}
+.soil-testing{
+  margin-left: -170px;
+  max-width: 32ch;
+  text-align:left;
+}
+#testing-soil{
+  text-align: center;
+  margin-left: -16px;
+  max-width: 30ch;
+}
+/*aqua section*/
+.aquaponic-section{
+  margin: 50px 0px;
+}
+.aqua-imgs img{
+  width: 320px;
+  height: 220px;
+}
+.aqua-imgs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+} 
+.aqua-imgs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto ;
+}
+/*intercropping*/
+.aquaponic-section h1, .intercropping h1{
+  color: #1A2733;
+}
+.intercropping{
+  margin-top: 41px;
+}
+.intercropping-list ul{
+  list-style: none;
+  margin-left: -40px;
+  margin-bottom: 100px;
+}
+.inter-imgs img{
+  width: 320px;
+  height: 220px;
+}
+.inter-imgs{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  
+} 
+.inter-imgs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto ;
+} 
+#conclusion{
+  position: relative;
+}
+.conclusion img{
+  width: 100%;
+  margin: auto;
+  margin-bottom: -.9%;
+}
+.conclusion-motto{
+  color: #000000;
+  font-size: clamp(.5rem, 0rem + 4vw, 2rem);
+  max-width: 900px;
+  background: #fff;
+}
+.socials{
+  margin-left: 1px;
+  text-align: center;
+}
+.socials i{
+  font-size: 31px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+@media(min-width:1720px){
+  #center{
+    max-width: clamp(300px, 85%, 1700px);
+    margin: auto;
+  }
+
+}
+@media( max-width:985px){
+  .motto-quote h3{
+    margin-left: 123px;
+   }
+
+   .solar-motto{
+    margin-bottom: 20px;
+    place-items: center;
+  }
+  .motto-quote{
+    margin-top: 7px;
+    margin-left: -160px;
+    
+  }
+  .motto-small{
+    margin: -13px 30px;
+    margin-left:159px;
+  }
+
+    .designs{
+      overflow-x: scroll;
+      gap: 30px;
+    }
+    .kits{
+      overflow: scroll;
+      height: 295px;
+      width: 100%;
+    }
+    figcaption{
+      max-width: 254px;
+    }
+    .kit{
+      background: #ffffff;
+      max-width: 254px;
+      height: 225px;
+      border: solid 0px #0D467B;
+      margin: 25px 20px;
+      text-align: center;
+  }
+  .kit img{
+      width: 200px;
+      height: 220px ;
+  }
+}
+@media( max-width:570px){
+  .maize-intro, .irrigation-intro{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }  
+  
+}
+@media( max-width:650px){
+  /*soil-analysis*/
+.soil{
+ 
+  }
+.section1{
+  margin-top: 40px;
+  width: 370px;
+  height: 370px; 
+  place-items: center;         
+  margin-left: -45px; 
+}
+.soil-analysis{
+  margin-left: 43px ;
+  padding-top: 74px;
+}
+.soil-analysis h2{
+  margin-left: 3px;
+  margin-bottom: -10px;
+}
+.section2{
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  margin-left: 140px;
+  margin-bottom: 40px;
+  margin: auto;
+}
+.soil-testing{
+  margin-top: 30px;
+  padding-top: 5px;
+  margin-left: -50px;
+}
+.soil-testing h2{
+  margin-bottom: -10px;
+  margin-left: -5px;
+}
+#testing-soil{
+  margin-top: -10px;
+  margin-left: -16px;
+}
+.why-test-soil h2{
+  margin-bottom:-10px;
+}
+}
+@media(max-width:486.99px){
+.section1{
+  margin-top: 40px;
+  width: 350px;
+  height: 350px; 
+  place-items: center;         
+  margin-left: -35px; 
+}
+.soil-analysis h2{
+  margin-left: 5px;
+  margin-bottom: -10px;
+}
+.section2{
+  margin-left: -10px;
+  margin-bottom: 50px;
+  margin: auto;
+}
+.soil-testing{
+  margin-left: -10px;
+}
+}
+@media(max-width:386.99px){
+  .soil-analysis{
+    margin-left: 35px ;
+  } 
+  .soil-analysis h2{
+    margin-left: 3px;
+  }
+  .soil-testing{
+    margin-left: 1px;
+  }
+}
+@media(max-width:358.99px){
+  .section1{
+    width: 315px;
+    height: 315px; 
+    overflow: hidden;
+  } 
+  .soil-analysis{
+    margin-top: -17px;
+  }}

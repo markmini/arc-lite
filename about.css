@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: #ffffff;
+    margin: 0px;
+}
+
+p{
+   line-height: 1.6em;
+   color: #303030; 
+   text-align: left; 
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 420;
+   font-style: normal;
+   font-variation-settings:"slnt" 0;
+   padding-left: 20px;
+}
+#center span{
+   padding-left: 20px;
+   font-family: "Krona One", sans-serif;
+   font-weight: 200;
+   font-style: normal;
+  
+}
+
+#center{
+    max-width: clamp(100px, 70%, 1000px);
+    margin: auto;
+    
+} 
+
+.est{
+    
+    margin: 45px;
+    padding: 13px;
+    border-radius: 20px;
+}
+.est h4{
+    padding-left: 20px;
+    color: #494c4e;
+}
+.mission{
+    
+    margin: auto ;
+    margin-top: 40px;
+    padding: 23px;
+    border-radius: 20px;
+    max-width: 845px;
+}
+.mission h3{
+    color: #2680D3;
+    margin-left: 18px;
+    margin-bottom: -6px;
+    font-weight: 150;
+}
+#join{
+    color: #348cde;
+    padding: 2em;
+}
+.company-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px; 
+    width: 100%;
+}
+.fa-brands{
+    font-size: 28px;
+}
+.industry{
+    outline: 0px solid #3c92e323;
+    max-width: 320px;
+    text-align: center;
+    border-radius: 12px;
+    
+}
+.company-size{
+    outline: 0px solid #3C93E3;
+    max-width: 320px;
+    text-align: center;
+    border-radius: 12px;
+}
+.foundation{
+    outline: 0px solid #3C93E3;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 12px;
+}
+.location{
+    text-align: center;
+    outline: 0px solid #3C93E3;
+    border-radius: 12px;
+}
+.industry h2{
+    color:#86CB2E ;
+    padding-left: 20px;
+}
+.company-size h2{
+    color:#3C93E3 ;
+    padding-left: 20px;
+}
+.foundation h2{
+    color: #19C42A;
+    padding-left: 20px;
+}
+#foundation-h2{
+    color:#F69709;
+    padding-left: 20px;
+}
+.contact-info{
+    
+    margin: auto ;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 900px;
+    margin-bottom: 20px;
+    margin-top: 11px;
+    
+    
+}
+.foundation p, .company-size p, .industry p, .location p, .contact-info p{
+    text-align: center;
+}
+.contact-info h2{
+    color: #0D467B;
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+.socials{
+    margin-left: 35px;
+}
+.socials i{
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    pointer-events: none;
+}
+footer{
+    padding: 20px;
+}
+@media(max-width:800px){
+
+
+
+    .company-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px; 
+        width: 100%;
+    }
+    #center{
+        max-width: clamp(100px, 90%, 1000px);
+        margin: auto;
+        
+    } 
+    #center span{
+        padding-left: 20px;
+        font-family: "Krona One", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 23px;
+        max-width: 20px;
+        text-wrap: balance;
+    }
+    .socials i{
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        pointer-events: none;
+    }
+}
+@media( max-width:376px){
+    html{font-size: calc(12px + 0.390625vw);}
+    .company-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 10px; 
+    }
+    .est{
+    
+        margin: 10px;
+        padding: 0px;
+        border-radius: 20px;
+    }
+    .est h4{
+        padding-left: 20px;
+        color: #494c4e;
+    }
+    p{
+        line-height: 1.6em;
+        color: #303030; 
+        text-align: left; 
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-variation-settings:"slnt" 0;
+        padding-left: 10px;
+        font-size: 13px;
+     }
+}
+@media(max-width:499.98px){
+    .nav-center a{
+        display: none;
+    }
+    html{font-size: calc(12px + 0.390625vw);}
+}    
